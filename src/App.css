@@ -1,0 +1,254 @@
+/*
+@font-face {
+  font-family: 'matrix_Mym';
+  src: url('./Componentes/imagenes/matrix-4.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family:"matrix_Mym";*/
+
+}
+body{
+  background-image: url("./Componentes/imagenes/matrix.gif");
+}
+header{
+  background-color:rgb(23, 26, 26);
+  position: sticky;
+  left: 0px;
+  top: 0px;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1{
+  font-size: 17px;
+  color:blanchedalmond;
+  border:solid white;
+  margin-left: 5px;
+}
+nav{
+  border:solid white;
+}
+li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*border: solid rgb(17, 255, 17);*/
+  list-style: none;
+  text-align: center;
+  color:blanchedalmond;
+}
+#yo{
+  position: fixed;
+  left: 50%;
+  margin-left: -25px;
+  top: 37px;
+  margin-top: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 5px 2px 5px whitesmoke;
+  margin-right: 10px;
+  }
+  #yo:hover{
+    width: 75px;
+    height: 75px;
+  }
+  .Link{
+    color: aliceblue;
+    text-decoration: none;
+  }
+  
+/*
+html{
+  width:150px;
+  position: static;
+}
+
+
+ENCABEZADO
+header{
+  background-color:rgb(23, 26, 26);
+  position: sticky;
+  left: 0px;
+  top: 0px;
+  width:200px;
+}
+h1{
+  color: aliceblue;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-top: 5px;
+  text-align: center;
+  
+}
+
+h1:hover{
+  color:rgb(17, 255, 17);
+  
+}
+
+#MenuP{
+  background-color: rgb(23, 26, 26);
+}
+
+section{
+  REDES SOCIALES
+  background-color: rgb(10, 67, 76);
+  position: fixed;
+  width: 50px;
+  height: 300px;
+  top: 100px;
+  left:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+  box-shadow: 5px 2px 5px whitesmoke;
+}
+footer{
+ 
+  font-size: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  border: solid 1px gray;
+  background-color:rgb(23, 26, 26);
+  color: aliceblue;
+  position: fixed;
+  bottom: 0px;
+ 
+}
+
+
+a{
+  color: aliceblue;
+  text-decoration: none;
+}
+a:hover{
+  color: rgb(17, 255, 17);
+  font-size: 30px;
+}
+
+li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid rgb(17, 255, 17);
+  list-style: none;
+  text-align: center;
+}
+
+#frase{
+  color: aliceblue;
+  font-family:"matrix_Mym";
+  font-size: 25px;
+  text-shadow: 5px 5px 5px rgb(10, 67, 76);
+  width:200px;
+}
+img.redsocial{
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  border-radius: 50%;
+  
+}
+
+img.redsocial:hover{
+ background-color: greenyellow;
+ box-shadow: 5px 2px 5px whitesmoke;
+ width: 75px;
+ height: 75px;   
+}
+#insta{
+  border-radius: 10px;
+
+}
+
+img{
+  width: 125px;
+  height: 75px;
+}
+img:hover{
+  box-shadow: 5px 2px 5px whitesmoke;
+}
+*/
+
+/* animacion tp*/
+
+@keyframes moveAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#ModeloTP{
+    width: 175px;
+    height: 175px;
+    background-color: rgba(10, 67, 76, 0.555);
+    position:fixed;
+    top: 50%;
+    left: 30%;
+    border-radius: 50%;
+    box-shadow: none;
+}
+#TP {
+    position:absolute;
+    top:calc(50%-100px);
+    left:calc(50%-100px);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(240, 248, 255, 0);
+    animation: moveAround 2s infinite linear;
+  } 
+  #TPL{
+    position: absolute;
+    top: calc(50%-100px);
+    left:calc(50%-100px);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(240, 248, 255, 0);
+    animation: moveAround 3s infinite linear;
+
+  }
+
+  #sol{
+      width: 30px;
+      height:30px;
+      border-radius: 50%;
+      box-shadow: 20px 10px 20px 20px  white, inset 10px 10px 20px 20px rgba(251, 255, 0, 0.651);
+  }
+  #luna{
+      width: 25px;
+      height:25px; 
+  }
+  #estrellas{
+    position: absolute;
+    top: calc(50%-135px);
+    left: calc(50%-135px);
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    animation: moveAround 10s infinite linear;
+    z-index: 1;
+    opacity: 50%;
+  }
+
+  #tierraPlana{
+      position: absolute;
+      border-radius: 50%;
+      top:calc(50%-140px);
+      left:calc(50%-140px);
+      width: 140px;
+      height:140px;
+  }
+  
