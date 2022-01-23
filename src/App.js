@@ -7,7 +7,8 @@ import Portafolio from "./Componentes/Portafolio";
 import RedesSociales from './Componentes/RedesSociales';
 import Encabezado from "./Componentes/Encabezado";
 import Footer from "./Componentes/Footer";
-import icono from "./Componentes/imagenes/iconogmg.ico";
+import Manila from "./Componentes/Manila";
+import ReactP from "./Componentes/ReactP";
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
      <HashRouter>
 
         <Encabezado/>
-        <img id="yo" src={icono} alt="imagen logo"/>
+        
         <RedesSociales/>
        
         <Routes>
@@ -28,7 +29,8 @@ function App() {
           <Route path="/sobre_mi" element={<Sobremi/>}/>
           <Route path="/servicios" element={<Servicios/>}/>
           <Route path="/portafolio" element={<Portafolio/>}/>
-          
+          <Route path="/portafolio/manila" element={<Manila/>}/>
+          <Route path="/portafolio/react" element={<ReactP/>}/>
           
         </Routes>
 

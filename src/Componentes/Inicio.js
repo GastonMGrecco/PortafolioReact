@@ -6,7 +6,7 @@ const Inicio = () => {
 
             <TierraPlana/>
            
-           <p id="frase">"DIME QUE PROGRAMAS Y TE DIRE QUIEN ERES"</p>
+           <p id="frase">"Dime qué programas y te diré quién eres"</p>
         </div>
     );
 };

@@ -21,162 +21,134 @@ header{
   position: sticky;
   left: 0px;
   top: 0px;
-  height: 75px;
+  height: 100px;
+  z-index:10;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
+
 h1{
+  width: 50%;
+  text-align: center;
   font-size: 17px;
   color:blanchedalmond;
-  border:solid white;
-  margin-left: 5px;
+}
+button{ 
+  border:none;
+  background-image: url("./Componentes/imagenes/pngwing.png");
+  background-size:contain ;
+  background-color: rgba(10, 67, 76, 0);
+  width:50px;
+  height: 50px;
+  background-position:center;
 }
 nav{
-  border:solid white;
+  position: fixed;
 }
 li{
-  display: flex;
-  justify-content: center;
   align-items: center;
-  /*border: solid rgb(17, 255, 17);*/
   list-style: none;
   text-align: center;
   color:blanchedalmond;
+  margin-top: 35px;
 }
-#yo{
-  position: fixed;
-  left: 50%;
-  margin-left: -25px;
-  top: 37px;
-  margin-top: -25px;
-  width: 50px;
+h2{
   height: 50px;
+  font-size:20px;
+  color:ivory;
+  text-align: center;
+  background-color: rgb(10, 67, 76);
+  padding-top: 10px;
+}
+@keyframes deraiz {
+  0% {right: -300px;}
+  25% {right: -250px;}
+  50% {right: -200px;}
+  75% {right: -100px;}
+  100% {right:0;}
+}
+#MenuP{
+  position:fixed;
+  top: 100px;
+  right: 0;
+  background-color:rgba(23, 26, 26, 0.568);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content:last baseline;
+  align-items: stretch; 
+}
+
+
+#yo{
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
-  box-shadow: 5px 2px 5px whitesmoke;
-  margin-right: 10px;
   }
-  #yo:hover{
-    width: 75px;
-    height: 75px;
-  }
+ 
   .Link{
     color: aliceblue;
     text-decoration: none;
   }
   
-/*
-html{
-  width:150px;
-  position: static;
-}
-
-
-ENCABEZADO
-header{
-  background-color:rgb(23, 26, 26);
-  position: sticky;
-  left: 0px;
-  top: 0px;
-  width:200px;
-}
-h1{
-  color: aliceblue;
-  font-size: 15px;
-  padding-left: 10px;
-  padding-top: 5px;
-  text-align: center;
+  section{
+   
+    background-color: rgb(10, 67, 76);
+    position: fixed;
+    width: 75px;
+    height: 300px;
+    top: 100px;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    box-shadow: 5px 2px 5px whitesmoke;
+  }
+  img.redsocial{
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border-radius: 50%;
+    
+  }
   
-}
-
-h1:hover{
-  color:rgb(17, 255, 17);
+  #insta{
+    border-radius: 10px;
   
-}
-
-#MenuP{
-  background-color: rgb(23, 26, 26);
-}
-
-section{
-  REDES SOCIALES
-  background-color: rgb(10, 67, 76);
-  position: fixed;
-  width: 50px;
-  height: 300px;
-  top: 100px;
-  left:0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content:space-around;
-  box-shadow: 5px 2px 5px whitesmoke;
-}
-footer{
+  }
+  
+  img{
+    width: 125px;
+    height: 75px;
+  }
+  #frase{
+    color: aliceblue;
+    /*font-family:"matrix_Mym";*/
+    font-size: 50px;
+    text-shadow: 5px 5px 5px rgb(10, 67, 76);
+    width: 300px;
+    position:fixed;
+    top:65%;
+    left:50%;
+    margin-left: -150px;
+    text-align: center;
+  }
+  footer{
  
-  font-size: 12px;
-  font-family: 'Courier New', Courier, monospace;
-  border: solid 1px gray;
-  background-color:rgb(23, 26, 26);
-  color: aliceblue;
-  position: fixed;
-  bottom: 0px;
- 
-}
-
-
-a{
-  color: aliceblue;
-  text-decoration: none;
-}
-a:hover{
-  color: rgb(17, 255, 17);
-  font-size: 30px;
-}
-
-li{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: solid rgb(17, 255, 17);
-  list-style: none;
-  text-align: center;
-}
-
-#frase{
-  color: aliceblue;
-  font-family:"matrix_Mym";
-  font-size: 25px;
-  text-shadow: 5px 5px 5px rgb(10, 67, 76);
-  width:200px;
-}
-img.redsocial{
-  width: 30px;
-  height: 30px;
-  background-color: green;
-  border-radius: 50%;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:rgb(23, 26, 26);
+    color: aliceblue;
+    position: fixed;
+    bottom: 0px;
+    width:100%;
+    text-align: center;
+   
+  }
   
-}
-
-img.redsocial:hover{
- background-color: greenyellow;
- box-shadow: 5px 2px 5px whitesmoke;
- width: 75px;
- height: 75px;   
-}
-#insta{
-  border-radius: 10px;
-
-}
-
-img{
-  width: 125px;
-  height: 75px;
-}
-img:hover{
-  box-shadow: 5px 2px 5px whitesmoke;
-}
-*/
 
 /* animacion tp*/
 
@@ -190,35 +162,38 @@ img:hover{
 }
 
 #ModeloTP{
-    width: 175px;
-    height: 175px;
+    width: 250px;
+    height: 250px;
     background-color: rgba(10, 67, 76, 0.555);
     position:fixed;
-    top: 50%;
-    left: 30%;
+    top: 115px;
+    left: 60%;
+    margin-left: -125px;
     border-radius: 50%;
     box-shadow: none;
+    z-index: 1;
 }
 #TP {
     position:absolute;
     top:calc(50%-100px);
     left:calc(50%-100px);
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color: rgba(240, 248, 255, 0);
     animation: moveAround 2s infinite linear;
+    z-index: 2;
   } 
   #TPL{
     position: absolute;
     top: calc(50%-100px);
     left:calc(50%-100px);
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color: rgba(240, 248, 255, 0);
     animation: moveAround 3s infinite linear;
-
+    z-index: 3;
   }
 
   #sol{
@@ -226,20 +201,22 @@ img:hover{
       height:30px;
       border-radius: 50%;
       box-shadow: 20px 10px 20px 20px  white, inset 10px 10px 20px 20px rgba(251, 255, 0, 0.651);
+      
   }
   #luna{
       width: 25px;
       height:25px; 
+      
   }
   #estrellas{
     position: absolute;
     top: calc(50%-135px);
     left: calc(50%-135px);
-    width: 135px;
-    height: 135px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     animation: moveAround 10s infinite linear;
-    z-index: 1;
+    z-index: 4;
     opacity: 50%;
   }
 
@@ -248,7 +225,54 @@ img:hover{
       border-radius: 50%;
       top:calc(50%-140px);
       left:calc(50%-140px);
-      width: 140px;
-      height:140px;
+      width: 200px;
+      height:200px;
+      z-index:0;
   }
   
+  #Sobremi{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: fixed;
+    top:115px;
+    left: 60%;
+    margin-left: -125px;
+
+  }
+  #soy{
+    color: aliceblue;
+    font-size: 25px;
+    text-shadow: 5px 5px 5px rgb(10, 67, 76);
+    width: 300px;
+    position:fixed;
+    top:65%;
+    left:50%;
+    margin-left: -150px;
+    text-align: center;
+
+  }
+  .portafolio{
+    
+    top:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 75px;
+    width: 85%;
+  }
+  .Lenguaje{
+    border-radius: 10px;
+    width: 250px;
+    height: 150px;
+    margin-top:15px;
+    margin-bottom: 10px;
+
+    text-align: center;
+
+  }
+  port{
+    width: 300px;
+    height:300px;
+  }
