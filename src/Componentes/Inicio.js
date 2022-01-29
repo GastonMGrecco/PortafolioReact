@@ -2,11 +2,15 @@ import React from 'react';
 import TierraPlana from './TierraPlana';
 const Inicio = () => {
     return (
-        <div>
+        <div className='inicio'>
 
             <TierraPlana/>
            
-           <p id="frase">"Dime qué programas y te diré quién eres"</p>
+           <p id="frase">
+               ¿Buscas un desarrollador para tu página web?
+                Dejas de dar vueltas como el sol alrededor 
+                de la tierra y contáctame!
+           </p>
         </div>
     );
 };

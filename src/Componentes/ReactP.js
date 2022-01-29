@@ -3,6 +3,7 @@ import frases from './imagenes/frases.jpg';
 import ricky from './imagenes/ricky.jpg';
 import clima from './imagenes/clima.jpg';
 import usuarios from './imagenes/usuarios.jpg';
+import pokemon from './imagenes/pokemon.jpg'
 
 const ReactP = () => {
     return (
@@ -22,6 +23,10 @@ const ReactP = () => {
             <a href="https://usuarios-app.netlify.app"
                 target="_blank" rel="noreferrer" >
                 <img alt="imagen" className="Lenguaje"src={usuarios} />
+            </a>
+            <a href="https://pokemon-appi.netlify.app"
+                target="_blank" rel="noreferrer" >
+                <img alt="imagen" className="Lenguaje"src={pokemon} />
             </a>
         </div>
     );
