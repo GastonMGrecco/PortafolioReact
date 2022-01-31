@@ -328,11 +328,10 @@ li{
     color: aliceblue;
     font-size: 25px;
     text-shadow: 5px 5px 5px rgb(10, 67, 76);
-    width: 300px;
-    position:fixed;
-    top:65%;
-    left:50%;
-    margin-left: -150px;
+    width: 75%;
+    margin-left:15%;
+    margin-top:400px;
+    margin-bottom:50px;
     text-align: center;
 
   }
