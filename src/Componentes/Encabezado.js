@@ -31,6 +31,9 @@ const Encabezado = () => {
 
 
     }
+    const ocultar=()=>{
+        setEsVisible(invisible)
+    }
     return (
         <header>
             <img id="yo" src={icono} alt="imagen logo" />
@@ -46,22 +49,23 @@ const Encabezado = () => {
 
                 <div id="MenuP" style={esVisible}>
                     <h2 className='menuTit'>Menú Principal</h2>
+                    <button className="equis" onClick={menu} />
                     <ul className='enlaces'>
                         <li>
                             <div className='imgInicio'></div>
-                            <Link to='/' className='Link'>Inicio</Link>
+                            <Link to='/' className='Link'onClick={ocultar}>Inicio</Link>
                         </li>
                         <li>
                             <div className='imgSM'></div>
-                            <Link to='/sobre_mi' className='Link'>Sobre mí</Link>
+                            <Link to='/sobre_mi' className='Link'onClick={ocultar}>Sobre mí</Link>
                         </li>
                         <li>
                             <div className='imgServicios'></div>
-                            <Link to='/servicios' className='Link'>Servicios</Link>
+                            <Link to='/servicios' className='Link'onClick={ocultar}>Servicios</Link>
                         </li>
                         <li>
                             <div className='imgPortafolio'></div>
-                            <Link to='/portafolio' className='Link'>Portafolio</Link>
+                            <Link to='/portafolio' className='Link'onClick={ocultar}>Portafolio</Link>
                         </li>
                     </ul>
                 </div>
