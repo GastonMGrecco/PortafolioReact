@@ -3,7 +3,8 @@ import frases from './imagenes/frases.jpg';
 import ricky from './imagenes/ricky.jpg';
 import clima from './imagenes/clima.jpg';
 import usuarios from './imagenes/usuarios.jpg';
-import pokemon from './imagenes/pokemon.jpg'
+import pokemon from './imagenes/pokemon.jpg';
+import joyeria from  './imagenes/joyeria.png';
 
 const ReactP = () => {
     return (
@@ -27,6 +28,10 @@ const ReactP = () => {
             <a href="https://pokemon-appi.netlify.app"
                 target="_blank" rel="noreferrer" >
                 <img alt="imagen" className="Lenguaje"src={pokemon} />
+            </a>
+            <a href="https://e-commerce-joyeria.netlify.app"
+                target="_blank" rel="noreferrer" >
+                <img alt="imagen" className="Lenguaje"src={joyeria} />
             </a>
         </div>
     );

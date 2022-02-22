@@ -2,7 +2,7 @@ import React from 'react';
 import icono from "./imagenes/logo.jpg";
 const Sobremi = () => {
     return (
-        <div>
+        <div className="contenedor">
              <img id="Sobremi" src={icono} alt="imagen logo"/>
              <p id="soy">Hola, mi nombre es Gastón Maximiliano Grecco. 
                  Tengo 34 años. Soy nacido en la ciudad de Mar del Plata, Bs. As., Argentina.
