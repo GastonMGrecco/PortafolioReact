@@ -2,11 +2,23 @@ import React from 'react';
 
 const Servicios = () => {
     return (
-        <div>
-            <p id="servicios">Hola, esta página está en construcción 
-            porque no tengo la más pálida idea de qué poner,
-            pero pronto seme ocurrirá algo. Por lo mientras puedes 
-            revizar mi portafolio y mis redes sociales. Hasta pronto.</p>
+        <div className="servicios">
+            <h1 id="servicios">Servicios</h1>
+            <ul className='lista'>
+                <li>Blog personal</li>
+                <li>E-commerce</li>
+                <li>APIS</li>
+                <li>Base de datos</li>
+                <li>Proyecto personal</li>
+                <li>Idea de negocio</li>
+                <li>Aplicación móbil</li>
+                <p>(próximamente)</p>
+                <li>Ciber seguridad</li>
+                <p>(próximamente)</p>
+                
+            </ul>
+            <p id="cotizacion">Si requieres una cotización, contáctame y
+                con gusto te atenderé a la brevedad</p>
         </div>
     );
 };
