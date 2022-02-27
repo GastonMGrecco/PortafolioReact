@@ -8,7 +8,7 @@ const Inicio = () => {
            
            <p id="frase">
                ¿Buscas un desarrollador para tu página web?
-                Dejas de dar vueltas como el sol alrededor 
+                Dejá de dar vueltas como el sol alrededor 
                 de la tierra y contáctame!
            </p>
         </div>
