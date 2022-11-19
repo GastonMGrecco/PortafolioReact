@@ -1,0 +1,26 @@
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+#aboutMe{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    opacity: 75%;
+    margin-top:115px;
+}
+.Iam{
+    width:90%;
+    height:calc(50vh - 175px);
+    background-color: black;
+    color:green;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:20px;
+    overflow-y: scroll;
+    font-family: monospace;
+}
+

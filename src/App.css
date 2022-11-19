@@ -1,21 +1,9 @@
-/*
-@font-face {
-  font-family: 'matrix_Mym';
-  src: url('./Componentes/imagenes/matrix-4.ttf') format('truetype');
-  font-style: normal;
-  font-weight: normal;
-}
-*/
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /*font-family:"matrix_Mym";*/
 
-}
+
 body{
-  background-image: url("./Componentes/imagenes/matrix.gif");
+  background-image: url("./assets/matrix.gif");
 }
+/*
 header{
   position: fixed;
   left:0;
@@ -233,7 +221,7 @@ li{
   
 
 /* animacion tp*/
-
+/*
 @keyframes moveAround {
   from {
     transform: rotate(0deg);
@@ -254,7 +242,7 @@ li{
   background-color: rgba(10, 67, 76, 0.555);
   border-radius: 20px;
   color: aliceblue;
-  /*font-family:"matrix_Mym";*/
+
   font-size: 35px;
   text-shadow: 5px 5px 5px rgb(10, 67, 76);
   width:100%;
@@ -438,6 +426,7 @@ li{
   /*-----------------------------------------------------------------------------*/
 
 /*Pantalla con mas de 700 px*/
+/*
   @media only screen and (min-width: 700px){
     @keyframes deraiz {
       0% {right: -300px;}
@@ -561,7 +550,7 @@ li{
 
   /*--------------------------------------------------------------------------*/
   /*Pantalla con un ancho mayor de 1000px*/
-
+/*
   @media only screen and (min-width: 1000px){
 
     .portafolio{
@@ -576,7 +565,7 @@ li{
   /*----------------------------------------------------------------------------*/
   /*Pantalla cel acostado*/
 
-
+/*
   @media only screen and (max-height: 450px){
    
     section{
@@ -625,4 +614,4 @@ li{
       grid-column: center;
       padding:20px;
      }
-  }
+  }*/

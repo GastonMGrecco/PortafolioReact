@@ -1,0 +1,28 @@
+section{
+   
+    background-color:rgba(0, 0, 0, 0.648);
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    bottom: 15px;
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    
+  }
+img.redsocial{
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border-radius: 50%;
+    
+  }
+  
+  #insta{
+    border-radius: 10px;
+  
+  }
+  
+  

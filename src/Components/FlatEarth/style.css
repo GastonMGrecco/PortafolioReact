@@ -1,0 +1,84 @@
+@keyframes moveAround {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+#ModeloTP{
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.597);
+    border-radius: 50%;
+    box-shadow: none;
+    position:relative;
+    left: 0;
+    margin-top: 125px;
+}
+
+#TP {
+    position:absolute;
+    top:50%;
+    margin-top: -68px;
+    left:50%;
+    margin-left: -68px;
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    background-color: rgba(240, 248, 255, 0);
+    animation: moveAround 2s infinite linear;
+    z-index: 2;
+  } 
+  #TPL{
+    position: absolute;
+    top:50%;
+    margin-top: -68px;
+    left:50%;
+    margin-left: -68px;
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    background-color: rgba(240, 248, 255, 0);
+    animation: moveAround 3s infinite linear;
+    z-index: 3;
+  }
+
+  #sol{
+      width: 30px;
+      height:30px;
+      border-radius: 50%;
+      box-shadow: 20px 10px 20px 20px  white, inset 10px 10px 20px 20px rgba(251, 255, 0, 0.651);
+      filter: opacity(35%);
+  }
+  #luna{
+      width: 25px;
+      height:25px; 
+      filter: opacity(35%);
+  }
+  #estrellas{
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    left:50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: moveAround 10s infinite linear;
+    z-index: 4;
+    opacity: 50%;
+  }
+
+  #tierraPlana{
+      position:absolute;
+      border-radius: 50%;
+      top: 50%;
+      margin-top: -100px;
+      left:50%;
+      margin-left: -100px;
+      filter: opacity(35%);
+      width: 200px;
+      height:200px;
+      z-index:0;
+  }

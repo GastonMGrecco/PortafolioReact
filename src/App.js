@@ -1,34 +1,32 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
+import Home from "./Routes/Home";
+import AboutMe from "./Routes/AboutMe";
+import Services from "./Routes/Services";
+import Briefcase from "./Routes/Briefcase";
+import SocialNetworks from "./Components/SocialNetworks";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import Manila from "./Routes/Manila";
+import React from "./Routes/React";
+import NodeJs from "./Routes/NodeJs";
+
 import "./App.css";
-import Inicio from "./Componentes/Inicio";
-import Sobremi from "./Componentes/Sobremi";
-import Servicios from "./Componentes/Servicios";
-import Portafolio from "./Componentes/Portafolio";
-import RedesSociales from "./Componentes/RedesSociales";
-import Encabezado from "./Componentes/Encabezado";
-import Footer from "./Componentes/Footer";
-import Manila from "./Componentes/Manila";
-import ReactP from "./Componentes/ReactP";
-import Nodejs from "./Componentes/Nodejs";
 
 function App() {
   return (
     <div className="App">
       <HashRouter>
-        <Encabezado />
-
-        <RedesSociales />
-
+        <Header />
+        <SocialNetworks />
         <Routes>
-          <Route path="/" element={<Inicio />} />
-          <Route path="/sobre_mi" element={<Sobremi />} />
-          <Route path="/servicios" element={<Servicios />} />
-          <Route path="/portafolio" element={<Portafolio />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/sobre_mi" element={<AboutMe />} />
+          <Route path="/servicios" element={<Services />} />
+          <Route path="/portafolio" element={<Briefcase />} />
           <Route path="/portafolio/manila" element={<Manila />} />
-          <Route path="/portafolio/react" element={<ReactP />} />
-          <Route path="/portafolio/nodejs" element={<Nodejs />} />
+          <Route path="/portafolio/react" element={<React />} />
+          <Route path="/portafolio/nodejs" element={<NodeJs />} />
         </Routes>
-
         <Footer />
       </HashRouter>
     </div>
