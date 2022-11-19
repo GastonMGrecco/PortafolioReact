@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Manila = () => {
+const Vanilla = () => {
     return (
         <div>
              
@@ -8,4 +8,4 @@ const Manila = () => {
     );
 };
 
-export default Manila;
+export default Vanilla;

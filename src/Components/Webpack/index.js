@@ -1,118 +1,46 @@
 import React from 'react';
-import './style.css'
-const webpack = () => {
-    
-    var set_interval;
-    var interval_delay = 2000;
-    var interval_running = false;
-    
-    var i = 0;
-    var rotateValue1 = 90;
-    var rotateValue2 = -90;
-    var topFace = [
-      "1px 6px 6px 1px",
-      "1px 1px 6px 6px",
-      "6px 1px 1px 6px",
-      "6px 6px 1px 1px"
-    ];
-    var side1 = ["1px 6px 6px 1px", "1px 1px 6px 6px", "1px", "1px"];
-    var side2 = ["1px", "1px", "1px 1px 6px 6px", "1px 6px 6px 1px"];
-    var side3 = ["1px 6px 6px 1px", "1px", "1px", "1px 1px 6px 6px"];
-    var side4 = ["1px", "1px 6px 6px 1px", "1px 1px 6px 6px", "1px"];
-    
-    document.querySelector("body").onload = function() {
-      webpackAnimation();
-      set_interval = setInterval(webpackAnimation, interval_delay);
-    };
-    
-    function webpackAnimation() {
-      interval_running = true;
-    
-      document.querySelector(".cube1").style.transform =
-        "rotateY(" + rotateValue1 + "deg)";
-      if (i > 3) {
-        i = 0;
-      }
-    
-      document.querySelector(".cube1 .face_top").style.borderWidth = topFace[i];
-      document.querySelector(".cube1 .face_side_1").style.borderWidth = side1[i];
-      document.querySelector(".cube1 .face_side_2").style.borderWidth = side2[i];
-      document.querySelector(".cube1 .face_side_3").style.borderWidth = side3[i];
-      document.querySelector(".cube1 .face_side_4").style.borderWidth = side4[i];
-    
-      rotateValue1 = rotateValue1 + 90;
-      i++;
-    
-      document.querySelector(".cube2").style.transform =
-        "translate(-50%, -50%) scale3d(0.5, 0.5, 0.5) rotateY(" +
-        rotateValue2 +
-        "deg)";
-    
-      rotateValue2 = rotateValue2 - 90;
-    }
-    
-    // Set the name of the "hidden" property and the change event for visibility
-    var hidden, visibilityChange;
-    if (typeof document.hidden !== "undefined") {
-      hidden = "hidden";
-      visibilityChange = "visibilitychange";
-    } else if (typeof document.mozHidden !== "undefined") {
-      // Firefox up to v17
-      hidden = "mozHidden";
-      visibilityChange = "mozvisibilitychange";
-    } else if (typeof document.webkitHidden !== "undefined") {
-      // Chrome up to v32, Android up to v4.4, Blackberry up to v10
-      hidden = "webkitHidden";
-      visibilityChange = "webkitvisibilitychange";
-    }
-    
-    function handleVisibilityChange() {
-      if (document[hidden]) {
-        clearInterval(set_interval);
-        interval_running = false;
-      } else {
-        clearInterval(set_interval);
-        if (!interval_running)
-          set_interval = setInterval(webpackAnimation, interval_delay);
-      }
-    }
-    
-    // Warn if the browser doesn't support addEventListener or the Page Visibility API
-    if (
-      typeof document.addEventListener === "undefined" ||
-      typeof document[hidden] === "undefined"
-    ) {
-      alert(
-        "This demo requires a modern browser that supports the Page Visibility API."
-      );
-    } else {
-      // Handle page visibility change
-      document.addEventListener(visibilityChange, handleVisibilityChange, false);
-    }
+import style from './stylewebpack.module.css';
+
+const Webpack = () => {
   return (
-<div className="webpack">
-        <div className="webpack-logo">
-            <div className="cube_wrapper">
-                <div className="cube cube1">
-                    <div className="face face_top"></div>
-                    <div className="face face_bottom"></div>
-                    <div className="face face_side_1"></div>
-                    <div className="face face_side_2"></div>
-                    <div className="face face_side_3"></div>
-                    <div className="face face_side_4"></div>
-                </div>
-                <div className="cube cube2">
-                    <div className="face face_top"></div>
-                    <div className="face face_bottom"></div>
-                    <div className="face face_side_1"></div>
-                    <div className="face face_side_2"></div>
-                    <div className="face face_side_3"></div>
-                    <div className="face face_side_4"></div>
-                </div>
+    <div style={{ position: 'relative' }}>
+      <div className={style.container}>
+        <p
+          id={style.ptop}
+          style={{ color: 'white', fontSize: '30px', marginBottom: '50px', textAlign: 'center' }}
+        >
+          Webpack 5
+        </p>
+        <div className={style.containerCubo}>
+          <div className={style.cube}>
+            <div className={style.cube_inner}>
+              <div className={style.front}></div>
+              <div className={style.back}></div>
+              <div className={style.left}></div>
+              <div className={style.right}></div>
+              <div className={style.top}></div>
+              <div className={style.bottom}></div>
             </div>
+            <div className={style.cube_outer}>
+              <div className={style.front}></div>
+              <div className={style.back}></div>
+              <div className={style.left}></div>
+              <div className={style.right}></div>
+              <div className={style.top}></div>
+              <div className={style.bottom}></div>
+            </div>
+          </div>
         </div>
+
+        <p
+          id={style.pbottom}
+          style={{ color: 'white', fontSize: '30px', marginTop: '50px', textAlign: 'center' }}
+        >
+          ModuleFederationPlugin
+        </p>
+      </div>
     </div>
   );
 };
 
-export default webpack;
+export default Webpack;

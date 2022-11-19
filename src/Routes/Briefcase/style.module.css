@@ -1,0 +1,40 @@
+
+  @media (prefers-reduced-motion: no-preference) {
+    .Applogo {
+      animation: App-logo-spin infinite 20s linear;
+      height: 175px;
+    }
+  }
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .container{
+    height: calc(100vh - 100px);
+    margin-top: 100px;
+    padding: 10px;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  .imgs{
+    height:100px;
+    margin:20px;
+ 
+  }
+  .links{
+    height: 20%;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    /*****************************************/
+ 
