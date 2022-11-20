@@ -1,0 +1,26 @@
+.container{
+    margin-top: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  .imgs{
+    height:200px;
+    width: 80%;
+    margin:20px;
+    border-radius: 5px;
+    border:5px solid rgba(0, 128, 0, 0.438);
+ 
+  }
+  .links{
+    height:200px;
+    width: 100%;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }

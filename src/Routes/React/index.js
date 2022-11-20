@@ -5,33 +5,34 @@ import clima from './assets/clima.jpg';
 import usuarios from './assets/usuarios.jpg';
 import pokemon from './assets/pokemon.jpg';
 import joyeria from  './assets/joyeria.png';
+import style from './style.module.css'
 
 const ReactP = () => {
     return (
-        <div className='portafolio'>
-            <a className="LinkP"href="https://frases-app.netlify.app"
+        <div className={style.container}>
+            <a className={style.links} href="https://frases-app.netlify.app"
                 target="_blank" rel="noreferrer" >
-                <img alt="imagen" className="Lenguaje"src={frases} />
+                <img alt="imagen" className={style.imgs} src={frases} />
             </a>
-            <a className="LinkP"href="https://my-clima-app.netlify.app"
+            <a className={style.links} href="https://my-clima-app.netlify.app"
                 target="_blank" rel="noreferrer" >
-                <img alt="imagen" className="Lenguaje"src={clima} />
+                <img alt="imagen" className={style.imgs} src={clima} />
             </a>
-            <a className="LinkP"href="https://ricky-and-morty-app.netlify.app"
+            <a className={style.links} href="https://ricky-and-morty-app.netlify.app"
                 target="_blank" rel="noreferrer" >
-                <img alt="imagen" className="Lenguaje"src={ricky} />
+                <img alt="imagen" className={style.imgs} src={ricky} />
             </a>
-            <a className="LinkP"href="https://usuarios-app.netlify.app"
+            <a className={style.links} href="https://usuarios-app.netlify.app"
                 target="_blank" rel="noreferrer" >
-                <img alt="imagen" className="Lenguaje"src={usuarios} />
+                <img alt="imagen" className={style.imgs} src={usuarios} />
             </a>
-            <a className="LinkP"href="https://pokemon-appi.netlify.app"
+            <a className={style.links} href="https://pokemon-appi.netlify.app"
                 target="_blank" rel="noreferrer" >
-                <img alt="imagen" className="Lenguaje"src={pokemon} />
+                <img alt="imagen" className={style.imgs} src={pokemon} />
             </a>
-            <a className="LinkP"href="https://e-commerce-joyeria.netlify.app"
+            <a className={style.links} href="https://e-commerce-joyeria.netlify.app"
                 target="_blank" rel="noreferrer" >
-                <img alt="imagen" className="Lenguaje"src={joyeria} />
+                <img alt="imagen" className={style.imgs} src={joyeria} />
             </a>
         </div>
     );
