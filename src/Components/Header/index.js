@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './style.css';
+import style from './style.module.css';
 
 const Encabezado = () => {
   return (
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <Link to='/' title="Home">
+    <header className={style.header}>
+      <nav className={style.nav}>
+        <ul className={style.ul}>
+          <li className={style.li}>
+            <Link to='/' title="Home" >
               <svg
-              
-                className='Link'
+
+                className={style.svg}
                 height='512pt'
                 preserveAspectRatio='xMidYMid meet'
                 viewBox='0 0 512 512'
@@ -24,11 +24,12 @@ const Encabezado = () => {
                 </g>
               </svg>
             </Link>
+            <Link to='/' title="Home" style={{textDecoration:'none', color:'white'}}> Home </Link>
           </li>
-          <li>
+          <li className={style.li}>
             <Link to='/sobre_mi' title="About me">
               <svg
-                className='Link'
+                className={style.svg}
                 height='980pt'
                 preserveAspectRatio='xMidYMid meet'
                 viewBox='0 0 674 980'
@@ -41,11 +42,12 @@ const Encabezado = () => {
                 </g>
               </svg>
             </Link>
+            <Link to='/sobre_mi' title="About me" style={{textDecoration:'none', color:'white'}}> About me</Link>
           </li>
-          <li>
+          <li className={style.li}>
             <Link to='/servicios' title="Services">
               <svg
-                className='Link'
+                className={style.svg}
                 height='1600pt'
                 preserveAspectRatio='xMidYMid meet'
                 viewBox='0 0 1600 1600'
@@ -59,11 +61,12 @@ const Encabezado = () => {
                 </g>
               </svg>
             </Link>
+            <Link to='/servicios' title="Services" style={{textDecoration:'none', color:'white'}}> Services</Link>
           </li>
-          <li>
+          <li className={style.li}>
             <Link to='/portafolio' title="Briefcase">
               <svg
-                className='Link'
+                className={style.svg}
                 height='680pt'
                 preserveAspectRatio='xMidYMid meet'
                 viewBox='0 0 980 680'
@@ -76,6 +79,7 @@ const Encabezado = () => {
                 </g>
               </svg>
             </Link>
+            <Link to='/portafolio' title="Briefcase" style={{textDecoration:'none', color:'white'}}> Briefcase</Link>
           </li>
         </ul>
       </nav>
