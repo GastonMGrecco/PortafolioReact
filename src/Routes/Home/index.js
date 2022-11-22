@@ -1,15 +1,15 @@
 import React from 'react';
 // import FlatEarth from '../../Components/FlatEarth/';
 
-import './style.css'
+import style from './style.module.css'
 
 const Inicio = () => {
     return (
-        <div className='inicio'>
+        <div className={style.inicio}>
             {/* <FlatEarth/> */}
-            <h1>Gaston M. Grecco</h1>
-            <h2>FullStack Developer</h2>
-            <div className='fullStack'></div>
+            <h1 className={style.h1}>Gaston M. Grecco</h1>
+            <h2 className={style.h2}>FullStack Developer</h2>
+            <div className={style.fullStack}></div>
         </div>
     );
 };

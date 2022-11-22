@@ -24,7 +24,9 @@ const Encabezado = () => {
                 </g>
               </svg>
             </Link>
-            <Link to='/' title="Home" style={{textDecoration:'none', color:'white'}}> Home </Link>
+            <Link to='/' title="Home" style={{textDecoration:'none',  marginLeft: '15px'}}>
+               <span className={style.link}>Home</span> 
+            </Link>
           </li>
           <li className={style.li}>
             <Link to='/sobre_mi' title="About me">
@@ -42,7 +44,9 @@ const Encabezado = () => {
                 </g>
               </svg>
             </Link>
-            <Link to='/sobre_mi' title="About me" style={{textDecoration:'none', color:'white'}}> About me</Link>
+            <Link to='/sobre_mi' title="About me" style={{textDecoration:'none',  marginLeft: '15px'}}>
+            <span className={style.link}>About me</span>
+            </Link>
           </li>
           <li className={style.li}>
             <Link to='/servicios' title="Services">
@@ -61,7 +65,9 @@ const Encabezado = () => {
                 </g>
               </svg>
             </Link>
-            <Link to='/servicios' title="Services" style={{textDecoration:'none', color:'white'}}> Services</Link>
+            <Link to='/servicios' title="Services" style={{textDecoration:'none',  marginLeft: '15px'}}> 
+            <span className={style.link}>Services</span>
+            </Link>
           </li>
           <li className={style.li}>
             <Link to='/portafolio' title="Briefcase">
@@ -79,7 +85,9 @@ const Encabezado = () => {
                 </g>
               </svg>
             </Link>
-            <Link to='/portafolio' title="Briefcase" style={{textDecoration:'none', color:'white'}}> Briefcase</Link>
+            <Link to='/portafolio' title="Briefcase" style={{textDecoration:'none',  marginLeft: '15px'}}>
+              <span className={style.link}>Briefcase</span> 
+            </Link>
           </li>
         </ul>
       </nav>
