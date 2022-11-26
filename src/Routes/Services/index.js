@@ -6,13 +6,13 @@ const Servicios = () => {
         <div className={style.services}>
             <h1 id="servicios">Servicios</h1>
             <ul className={style.list}>
-                <li>Blog personal</li>
-                <li>E-commerce</li>
-                <li>APIS</li>
-                <li>Base de datos</li>
-                <li>Proyecto personal</li>
-                <li>Idea de negocio</li>
-                <li>Aplicación móbil</li>
+                <li className={style.li}>Blog personal</li>
+                <li className={style.li}>E-commerce</li>
+                <li className={style.li}>APIS</li>
+                <li className={style.li}>Base de datos</li>
+                <li className={style.li}>Proyecto personal</li>
+                <li className={style.li}>Idea de negocio</li>
+                <li className={style.li}>Aplicación móbil</li>
                 {/* <li>Ciber seguridad</li>
                 <p>(próximamente)</p> */}
 

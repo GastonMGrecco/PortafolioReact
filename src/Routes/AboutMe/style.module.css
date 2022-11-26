@@ -58,6 +58,7 @@
     .Iam{
         width:40%;
         height:calc(90vh - 175px);
+        font-size: 20px;
     }
   }
  

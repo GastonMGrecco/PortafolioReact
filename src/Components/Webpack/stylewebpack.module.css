@@ -168,16 +168,21 @@
     }
   }
   @media (min-width: 768px) {
-    .containerCubo{
-      zoom:90%;
-    }
+    /* .containerCubo{
+      zoom:50%;
+    } */
     .container{
       gap:115px;
     }
-    #ptop{
+    /* #ptop{
       visibility:visible;
-    }
-    #pbottom{
+    } */
+    /* #pbottom{
       visibility:visible;
+    } */
+  }
+  @media(min-width:1200px){
+  .containerCubo{
+      zoom:60%;
     }
   }
